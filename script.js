@@ -74,25 +74,25 @@ function drawMouseFollower() {
   translate(mouseX, mouseY);
   rotate(frameCount * 0.02);
   stroke(0, 212, 170, 100);
-  strokeWeight(1);
+  strokeWeight(1.5);
   beginShape();
   for (let i = 0; i < 3; i++) {
     let angle = TWO_PI / 3 * i - PI / 2;
-    let x = cos(angle) * 30;
-    let y = sin(angle) * 30;
+    let x = cos(angle) * 60;
+    let y = sin(angle) * 60;
     vertex(x, y);
   }
   endShape(CLOSE);
   pop();
   
   // Pulsing circles
-  let pulseSize = sin(frameCount * 0.05) * 10 + 40;
+  let pulseSize = sin(frameCount * 0.05) * 20 + 80;
   stroke(0, 212, 170, 50);
-  strokeWeight(1);
+  strokeWeight(1.5);
   ellipse(mouseX, mouseY, pulseSize);
   
   stroke(0, 212, 170, 30);
-  ellipse(mouseX, mouseY, pulseSize + 20);
+  ellipse(mouseX, mouseY, pulseSize + 40);
 }
 
 function windowResized() {
