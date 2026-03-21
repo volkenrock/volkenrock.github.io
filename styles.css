@@ -619,6 +619,15 @@ body {
   font-weight: 500;
 }
 
+.contact-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: inherit;
+}
+
 /* Footer */
 .footer {
   position: relative;
