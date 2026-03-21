@@ -6,13 +6,13 @@
 }
 
 :root {
-  --background: #1a1a2e;
+  --background: #221b35;
   --foreground: #eaeaea;
   --card: #242442;
   --card-hover: #2d2d4a;
-  --primary: #00d4aa;
-  --primary-dark: #00b894;
-  --muted: #9a9ab0;
+  --primary: #00d4c9;
+  --primary-dark: #00b8a9;
+  --muted: #dfddc2;
   --border: #3a3a5a;
   --font-sans: 'Space Grotesk', system-ui, sans-serif;
 }
