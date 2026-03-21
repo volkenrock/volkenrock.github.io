@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federico | Multimedia Designer</title>
+  <meta name="description" content="Portfolio profesional de diseño multimedia - Modelado 3D, Videomapping y Videojuegos">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- P5.js Canvas Background -->
+  <div id="p5-container"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">F</span>ederico
+      </a>
+      <nav class="nav-desktop">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre Mi</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre Mi</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <span class="badge">Disponible para proyectos</span>
+      <h1 class="hero-title">
+        Disenador
+        <span class="text-accent">Multimedia</span>
+      </h1>
+      <p class="hero-description">
+        Especializado en modelado 3D, videomapping y desarrollo de videojuegos.
+        Transformo ideas en experiencias visuales inmersivas.
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="mailto:federico@example.com" class="social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Portfolio</span>
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-description">Una seleccion de mis trabajos mas recientes en modelado 3D, videomapping y videojuegos.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Modelado 3D</span>
+            <h3 class="project-title">Entorno Cyberpunk</h3>
+            <p class="project-description">Escena urbana futurista con iluminacion neon y detalles arquitectonicos.</p>
+            <div class="project-tags">
+              <span class="tag">Blender</span>
+              <span class="tag">Cycles</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Videomapping</span>
+            <h3 class="project-title">Projection Festival</h3>
+            <p class="project-description">Instalacion interactiva de videomapping para festival de artes digitales.</p>
+            <div class="project-tags">
+              <span class="tag">Resolume Arena</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="6" y1="3" x2="6" y2="15"></line>
+                <circle cx="18" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M18 9a9 9 0 0 1-9 9"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Videojuegos</span>
+            <h3 class="project-title">Neon Drift</h3>
+            <p class="project-description">Juego de carreras arcade con estetica retrowave y fisica realista.</p>
+            <div class="project-tags">
+              <span class="tag">Unreal Engine</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Modelado 3D</span>
+            <h3 class="project-title">Personaje Sci-Fi</h3>
+            <p class="project-description">Diseno de personaje con armadura futurista y rigging completo.</p>
+            <div class="project-tags">
+              <span class="tag">Blender</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Videomapping</span>
+            <h3 class="project-title">Arquitectura Viva</h3>
+            <p class="project-description">Mapping sobre fachada historica para evento cultural.</p>
+            <div class="project-tags">
+              <span class="tag">Resolume Arena</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="6" y1="3" x2="6" y2="15"></line>
+                <circle cx="18" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M18 9a9 9 0 0 1-9 9"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Videojuegos</span>
+            <h3 class="project-title">Counter-Strike Map</h3>
+            <p class="project-description">Mapa competitivo para CS2 con layout balanceado.</p>
+            <div class="project-tags">
+              <span class="tag">Valve Hammer Editor</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section section-alt" id="sobre-mi">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-badge">Sobre Mi</span>
+          <h2 class="section-title">Creando experiencias digitales desde 2018</h2>
+          <p class="about-text">
+            Soy un disenador multimedia apasionado por la interseccion entre arte y tecnologia. 
+            Mi trabajo combina modelado 3D, videomapping y desarrollo de videojuegos para crear 
+            experiencias visuales unicas e inmersivas.
+          </p>
+          <p class="about-text">
+            A lo largo de mi carrera he colaborado con estudios de videojuegos, agencias creativas 
+            y artistas independientes, siempre buscando llevar cada proyecto al siguiente nivel.
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2022 - Presente</span>
+              <h4>Disenador Multimedia Senior</h4>
+              <p>Studio Creativo XYZ</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2020 - 2022</span>
+              <h4>Artista 3D</h4>
+              <p>GameDev Studios</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2018 - 2020</span>
+              <h4>Disenador Junior</h4>
+              <p>Agencia Digital ABC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Expertise</span>
+        <h2 class="section-title">Habilidades</h2>
+        <p class="section-description">Herramientas y tecnologias que domino para dar vida a proyectos creativos.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="skill-title">Modelado 3D</h3>
+          <p class="skill-description">Creacion de modelos, escenas y personajes tridimensionales.</p>
+          <div class="skill-tools">
+            <span class="tool">Blender</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="skill-title">Videomapping</h3>
+          <p class="skill-description">Proyecciones interactivas sobre superficies arquitectonicas.</p>
+          <div class="skill-tools">
+            <span class="tool">Resolume Arena</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="6" y1="3" x2="6" y2="15"></line>
+              <circle cx="18" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <path d="M18 9a9 9 0 0 1-9 9"></path>
+            </svg>
+          </div>
+          <h3 class="skill-title">Desarrollo de Videojuegos</h3>
+          <p class="skill-description">Creacion de niveles, mecanicas y experiencias jugables.</p>
+          <div class="skill-tools">
+            <span class="tool">Unreal Engine</span>
+            <span class="tool">Valve Hammer Editor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contacto</span>
+        <h2 class="section-title">Hablemos</h2>
+        <p class="section-description">Estoy disponible para proyectos freelance y colaboraciones.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <h3>Email</h3>
+          <p>federico@example.com</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3>Ubicacion</h3>
+          <p>Madrid, Espana</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="logo">
+          <span class="logo-accent">F</span>ederico
+        </a>
+        <div class="footer-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:federico@example.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2024 Federico. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
