@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
@@ -40,8 +41,10 @@ export default function RootLayout({
   return (
     <html lang="es" className={spaceGrotesk.variable} suppressHydrationWarning>
       <body className="font-sans antialiased" suppressHydrationWarning>
-        {children}
-        <Analytics />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          {children}
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )
